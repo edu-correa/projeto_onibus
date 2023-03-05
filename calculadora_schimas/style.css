@@ -1,0 +1,9 @@
+.box{
+    background-color: rgb(76, 76, 119);
+    width: 600px;
+    height: 300px;
+    margin: 10px;
+}
+.textos{
+    background-color: aqua;
+}

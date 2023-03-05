@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste git vaaai</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>BEM VINDO!!!</h1>
+    <h4>Quer testar como o nosso projeto pode ajudar? Só testar usando a nossa calculadora</h4>
+    <br>
+    <br>
+    <!--a média é de 3 a 5 Km por litro de diesel-->
+    <div class = "box">
+        <div class="textos">
+            Coloque o nome da empresa:
+            <input id="nome">
+            <br><br>
+            Coloque uma linha de ônibus:
+            <input id="linha">
+            <br><br>
+            Coloque quantos quilometros é a viagem desta linha de ônibus:
+            <input id="tempo">
+            <br><br>
+            Calcular:
+            <button onclick="calcular()">Calcular</button>
+            <p id="resposta"></p>
+        </div>
+    </div>
+</body>
+</html> 
+<script>
+    function calcular(){
+        var gasto_comb = tempo.value / 4
+        resposta.innerHTML = "Olá empresa "+ nome.value +", você atualmente gasta por volta de "+gasto_comb+"R$ por viagem de ônibus na linha "+ linha.value+" em combustivél <br>";
+        resposta.innerHTML += "Agora vamos imaginar que ao usar nosso produto você vai poder ver onde você está gastando dinheiro desnecessário";
+        resposta.innerHTML += "Com rotas mal otimizadas.";
+    }
+</script>
