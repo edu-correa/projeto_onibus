@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste git vaaai</title>
+    <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -33,9 +33,14 @@
 </html> 
 <script>
     function calcular(){
+        if (nome.value == '' && linha.value == '' && tempo.value == ''){
+            alert('ERRO, ESCREVA EM TODAS AS CAIXAS');
+        }
+
+        else{
         var gasto_comb = tempo.value / 4
-        resposta.innerHTML = "Olá empresa "+ nome.value +", você atualmente gasta por volta de "+gasto_comb+"R$ por viagem de ônibus na linha "+ linha.value+" em combustivél <br>";
-        resposta.innerHTML += "Agora vamos imaginar que ao usar nosso produto você vai poder ver onde você está gastando dinheiro desnecessário";
-        resposta.innerHTML += "Com rotas mal otimizadas.";
+        resposta.innerHTML = `Olá empresa ${nome.value}, você atualmente gasta por volta de ${gasto_comb}R$ por viagem de ônibus na linha ${linha.value} em combustivél <br>
+        Agora vamos imaginar que ao usar nosso produto você vai poder ver onde você está gastando dinheiro desnecessário com rotas mal otimizadas.`;
+        }
     }
 </script>
