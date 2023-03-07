@@ -1,9 +1,18 @@
+body{
+    background-color: rgb(226, 137, 137);
+}
+
 .box{
     background-color: rgb(76, 76, 119);
-    width: 600px;
-    height: 300px;
+    width: 800px;
+    height: 600px;
     margin: 10px;
+    border: 2px solid black;
 }
 .textos{
     background-color: aqua;
+    width: 650px;
+    height: 250px;
+    border: 2px solid black;
+    margin: 10px;
 }
