@@ -1,3 +1,0 @@
-Dicionario de dados: um protótipo de como a estrutura do banco do projeto irá funcionar
-
-teste
